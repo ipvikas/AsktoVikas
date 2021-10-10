@@ -5,8 +5,6 @@
 
 import streamlit as st
 
-
-
 ###########  1  ###########
 
 #https://www.youtube.com/watch?v=RpWeNzfSUHw&list=PLqnslRFeH2UrFW4AUgn-eY37qOAWQpJyg
@@ -139,7 +137,7 @@ from torch.utils.data import Dataset, DataLoader
 from google.colab import drive
 drive.mount('/content/drive')
 
-path = '/content/drive/My Drive/Colab Notebooks/Projects/ChatBot_Project/intents.json'
+path = 'https://github.com/ipvikas/AsktoVikas/blob/main/intents.json'
 
 import json
 with open(path, 'r') as f:
