@@ -371,9 +371,9 @@ def get_response(msg):
 
 
 @st.cache(allow_output_mutation=True, suppress_st_warning=True)
-st.title('Hindi to English Translator')
+st.title('Welcome at Ask to VIKAS...')
 text = st.text_area("Enter Text:", value='', height=None, max_chars=None, key=None)
-if st.button('Translate to English'):
+if st.button('Click to get your answer'):
     if text == '':
         
         st.write('Please enter Hindi text for translation') 
