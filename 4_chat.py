@@ -23,8 +23,8 @@ import torch
 import nltk
 nltk.download('punkt')
 
-from google.colab import drive
-drive.mount("/content/drive")
+#from google.colab import drive
+#drive.mount("/content/drive")
 
 # Commented out IPython magic to ensure Python compatibility.
 # %cd "/content/drive/My Drive/Colab Notebooks/NLP/ChatBot/"
@@ -35,8 +35,8 @@ import json
 
 import torch
 
-from model import NeuralNet
-from nltk_utils import bag_of_words, tokenize
+from 1_model import NeuralNet
+from 2_nltk_utils import bag_of_words, tokenize
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
