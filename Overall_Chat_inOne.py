@@ -2,8 +2,11 @@
 # coding: utf-8
 
 # In[ ]:
-
 import streamlit as st
+
+@st.cache(allow_output_mutation=True, suppress_st_warning=True)
+st.title('Welcome at Ask to VIKAS...')
+
 
 ###########  1  ###########
 
@@ -370,8 +373,7 @@ def get_response(msg):
 
 
 
-@st.cache(allow_output_mutation=True, suppress_st_warning=True)
-st.title('Welcome at Ask to VIKAS...')
+
 text = st.text_area("Enter Text:", value='', height=None, max_chars=None, key=None)
 if st.button('Click to get your answer'):
     if text == '':
