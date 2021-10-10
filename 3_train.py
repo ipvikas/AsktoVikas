@@ -27,7 +27,8 @@ drive.mount('/content/drive')
 
 
 
-path = '/content/drive/My Drive/Colab Notebooks/NLP/ChatBot/intents.json'
+#path = '/content/drive/My Drive/Colab Notebooks/NLP/ChatBot/intents.json'
+path = 'https://github.com/ipvikas/AsktoVikas/blob/main/intents.json'
 
 !pwd
 
@@ -48,7 +49,7 @@ with open(path, 'r') as f:
 import nltk
 nltk.download('punkt')
 
-from nltk_utils import bag_of_words, tokenize, stem
+from 1_nltk_utils import bag_of_words, tokenize, stem
 
 all_words = []
 tags = []
@@ -122,7 +123,7 @@ class ChatDataset(Dataset):
 import torch
 import torch.nn as nn
 
-from model import NeuralNet
+from 1_model import NeuralNet
 
 dataset = ChatDataset()
 train_loader = DataLoader(dataset=dataset,batch_size=batch_size,shuffle=True,num_workers=2)
