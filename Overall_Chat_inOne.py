@@ -4,7 +4,8 @@
 # In[ ]:
 import streamlit as st
 
-@st.cache(allow_output_mutation=True, suppress_st_warning=True)
+#@st.cache(allow_output_mutation=True, suppress_st_warning=True)
+@st.cache
 
 st.title("Welcome at Ask to VIKAS...")
 
@@ -137,8 +138,8 @@ from torch.utils.data import Dataset, DataLoader
 
 #2. Loading our JSON Data
 
-from google.colab import drive
-drive.mount('/content/drive')
+# from google.colab import drive
+# drive.mount('/content/drive')
 
 path = 'https://github.com/ipvikas/AsktoVikas/blob/main/intents.json'
 
